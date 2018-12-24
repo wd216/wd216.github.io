@@ -1,101 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
-     <title>个人简历</title>
-     <meta charset=UTF-8 />
-     <style type=text/css>   /*声明其内容为标准的css*/
-       *{
-          margin: 0;
-          padding: 0;
-          border: none;
-          font-size: 12px;
-        }  /*”*“为通配符选择器，将所有的元素设置为外边距margin和内边距padding为0，无边框，字体大小为12像素*/     
-       #resume{
-          width: 800px;
-          margin: 0 auto;   /*外边距上下为0，左右自适应，为了使DIV在浏览器中水平居中*/
-          border: solid 1px #DCDDDF;
-        }
-       #resume .one{
-          background: url(beijing.jpg);
-          width: 800px;
-          height: 90px;
-          font-size: 30px;
-          color: red;
-          font-weight: bold; /*定义粗体字符*/
-          text-align: center;
-          margin-bottom: 0; /*下外边框设置为0*/
-          line-height: 90px;
-        }
-		
-       #resume ul{
-          width: 780px;
-          margin-left: 13px;
-          margin-top: 20px;
-        }
-       #resume ul li{
-          font-size: 20px;
-          background: url(li.png) no-repeat;/*设置图片不重复*/
-          list-style: none;
-          text-indent: 2em; /*规定文本块中首行文字的缩进，em为相对单位*/
-          line-height: 30px;   /*行间距离为30像素*/
-          margin-bottom: 20px;
-          border-bottom: 1px solid #DCDDDF;
-        }
-       #resume ul li.none1{
-          border-bottom: none;  /*将id为resume中的ul 且class为none1的li去掉下边框*/
-        }
-       #resume ul li p{
-          font-size: 15px;
-        }  /*将id为resume中的ul li 下的p标签的字体设置为15像素*/
-     </style>
+<head>
+<title>个人简历</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
-<body>
-    <div id="resume">
-     <div class="one">个人简历</div>
-     <ul>
-       <li>个人信息
-         <p>
-           姓名：陈子寒;
-           性别：男;
-           籍贯：江西抚州;
-           年龄: 19;
-         </p>
-         <p>
-           手机：1316961XXXX;
-           学校：南方IT学院;
-           专业：软件工程;
-           学历：本科;
-         </p>
-       </li>
-       <li>教育背景
-         <p>
-           2017.8-2019.6: 南方IT学院 软件工作专业
-         </p>
-		</li>
-		<li>
-		<p>
-           计算机语言: 熟悉 C# 语言，熟悉 Java 语言
-         </p>
-		 <p>
-			熟练使用 JavaScript 脚本语言
-		 </p>
-		 <p>
-			数据库： 熟练使用 SqlServer 、 MySQL 、Sqlite 等数据库语言
-		 </p>
-		 <p>
-			框架 : Spring 核心框架、SpringMVC、Redis内存数据库、Mybatis框架
-		 </p>
-		 <p>
-			编程软件： Eclipse 、 IDEA
-		 </p>
-		</li>
-         
-       <li class="none1">自我评价
-         <p>
-           中肯、客观的自我评定……
-         </p>
-       </li>
-     </ul>
-    </div>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="headshot.jpg" alt="Alan Smith" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">陈子寒</h1>
+			<h2 class="quickFade delayThree">Job Title</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>QQ: <a href="mailto:joe@bloggs.com" target="_blank">1452064592</a></li>
+				<li>微信: <a href="http://www.bloggs.com">先占着</a></li>
+				<li>GitHub:<a href= "https://github.com/wd216">个人 github</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+	<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>个人信息</h1>
+				</div>
+
+				<div class="sectionContent">
+					<p>性别：男</p>
+					<p>籍贯：江西抚州</p>
+					<p>出生年月：1999.04</p>
+					<p>现居地址：广东省珠海市斗门区白蕉镇白蕉南路29号</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+	<section>
+			<div class="sectionTitle">
+				<h1>教育</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>暨南大学</h2>
+					<p>软件工程&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp毕业时间：2022.06</p>
+				</article>
+				
+				<article>
+					<h2>南方IT学院</h2>
+					<p>Java开发&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp毕业时间：2019.06</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>专业技能</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>技术语言</h2>
+					<!--<p class="subDetails">April 2011 - Present</p>-->
+					<p>精通C#、JAVA等面向对象的编程语言的底层实现逻辑以及运用 ;</p>
+				</article>
+				
+				<article>
+					<h2>关系型数据库</h2>
+					<!--<p class="subDetails">Janruary 2007 - March 2011</p>-->
+					<p>擅长SQLServer、MySQL、Sqlite3等关系型数据库的视图、存储过程、事物、索引、以及触发器的运用 ;</p>
+				</article>
+				
+				<article>
+					<h2>Web开发</h2>
+					<!--<p class="subDetails">October 2004 - December 2006</p>-->
+					<p>熟练掌握以Spring、Spring MVC、MyBatis3大框架为核心的Web项目开发 ;</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		
+		
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
 </body>
 </html>
